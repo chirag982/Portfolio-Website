@@ -1,0 +1,135 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, sans-serif;
+        }
+        .first-container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .first-container .name {
+            font-size: 6rem;
+            position: absolute;
+            top: 10%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            z-index: 1;
+        }
+        .first-container img {
+            position: absolute;
+            top: 25%;
+            transform: rotate(-7deg);
+            width: 30%;
+            height: 40vh;
+            z-index: 0;
+            border-radius: 10px;
+        }
+        .first-container .title {
+            font-family: monospace;
+            position: relative;
+            top: 18%;
+            font-size: 9rem;
+            font-weight: bold;
+            z-index: 1;
+            color: teal;
+        }
+        .first-container .subtitle {
+            position: relative;
+            top: 20%;
+            font-size: 1rem;
+        }
+        .second-container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .second-container-first {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 15%;
+            margin-left: 5%;
+        }
+        .second-container .heading {
+            position: relative;
+            top: 5%;
+            width: 40%;
+            font-size: 6rem;
+        }
+        .second-container-first .para {
+            padding-top: 10%;
+            width: 50%;
+            font-style: italic;
+        }
+        .second-container-second {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .second-container-second img {
+            width: 25%;
+            height: 30vh;
+        }
+        .second-container-third {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .second-container-third div {
+            width: 25%;
+            font-style: bold;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="first-container">
+        <div class="name">Chirag</div>
+        <img src="{% static 'images/chirag.jpg' %}">
+        <div class="title">PORTFOLIO</div>
+        <div class="subtitle">Computer Science & Engineering Major</div>
+    </div>
+
+    <div class="second-container">
+        <div class="second-container-first">
+            <div class="heading">A Little About Me</div>
+            <div class="para">
+                Hey! Myself Chirag final year Bachelor of Technology in Computer Science and Engineering Student. I am a Proficient Python Programmer, Full stack developer in Django, Ai/Ml learner with skills in Scikt-Learn, Pandas, Numpy and MatplotLib. Also a Java Programmer and skilled in Data Structure and Algorithms in Java. I am an Aspiring Software Engineer, was also the Tech club lead in my college Students Club. I am Eager to learn, grow, and contribute to meaningful projects as part of a supportive development team.  
+            </div>
+        </div>
+        <div class="second-container-second">
+            <img src="{% static 'images/lang.png' %}">
+            <img src="{% static 'images/webdev.webp' %}">
+            <img src="{% static 'images/ai.jpg' %}">
+        </div>
+        <div class="second-container-third">
+            <div>Python & Java</div>
+            <div>Full Stack (Django)</div>
+            <div>DataScience & AI/ML</div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
