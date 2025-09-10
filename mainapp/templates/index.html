@@ -66,7 +66,7 @@
             margin-right: 15%;
             margin-left: 5%;
         }
-        .second-container .heading {
+        .second-container-first .heading {
             position: relative;
             top: 5%;
             width: 40%;
@@ -100,6 +100,152 @@
             font-style: bold;
             font-size: 2rem;
         }
+        .third-container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .third-container .heading {
+            width: 40%;
+            font-size: 6rem;
+            margin-top: 2%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .third-container-first {
+            margin-top: 3%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-right: 10%;
+        }
+        .third-container-first .first, .second, .third {
+            width: 20%;
+        }
+        .fourth-container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .fourth-container .heading {
+            width: 100%;
+            font-size: 6rem;
+            margin-top: 2%;
+            text-align: center;
+        }
+        .fourth-container .img {
+            margin-top: 2%;
+            margin-right: 10%;
+            margin-left: 10%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .fourth-container img {
+            width: 25%;
+            height: 40vh;
+        }
+        .fourth-container .img2 {
+            margin-top: 5%;
+        }
+        .fourth-container .img-heading {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: -5%;    
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .fourth-container .img1-heading, .img2-heading, .img3-heading {
+            width: 25%;
+        }
+        .fourth-container .img2-heading {
+            margin-top: 5%;
+        }
+        .fifth-container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .fifth-container .fifth-container-first {
+            display: flex;
+        }
+        .fifth-container .fifth-container-first .fifth-heading {
+            font-size: 5rem;
+            width: 60%;
+        }
+        .fifth-container .fifth-container-first .para {
+            margin-top: 5%;
+            margin-left: 5%;
+            width: 25%;
+        }
+        .fifth-container-second {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .fifth-container-second1 {
+            margin-top: 5%;
+            width: 25%;
+            font-size: 2rem;
+        }
+        .fifth-container-second2 {
+            width: 75%;
+        }
+        .fifth-img1 {
+            margin-left: 10%;
+            width: 50%;
+            height: 50vh;
+        }
+        .fifth-img2 {
+            margin-left: 5%;
+            width: 20%;
+            height: 50vh;
+            transform: rotate(5deg);
+        }
+        .sixth-container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;   
+        }
+        .sixth-container-first {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .sixth-container img {
+            width: 25%;
+            margin-top: 7%;
+            height: 70vh;
+            transform: rotate(5deg);
+        }
+        .sixth-container .name {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+        .sixth-container .withme {
+            font-size: 5rem;
+            margin-top: 2%;
+            padding: 0;
+            font-style: bold;
+            width: 60%;
+        }
+        .sixth-container .data {
+            margin-top: 20%;
+            font-size: 2rem;
+        }
+        .sixth-container .data-add {
+            color: teal;
+        }
+        .sixth-container .data-email {
+            font-family: monospace;
+        }
     </style>
 </head>
 <body>
@@ -129,7 +275,119 @@
             <div>DataScience & AI/ML</div>
         </div>
     </div>
+
+    <div class="third-container">
+        <div class="heading">Skills</div>
+        <div class="third-container-first">
+            <div class="first">
+                <h1>Languages</h1>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>SQL</li>
+                    <li>HTML</li>
+                </ul>
+            </div>
+            <div class="second">
+                <h1>Libraries & Technologies</h1>
+                <ul>
+                    <li>Django</li>
+                    <li>Turtle</li>
+                    <li>Tkinter</li>
+                    <li>Pandas</li>
+                    <li>Numpy</li>
+                    <li>Matplotlib</li>
+                    <li>Scikit-Learn</li>
+                    <li>Selenium</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>OpenCV</li>
+                </ul>
+            </div>
+            <div class="third">
+                <h1>Concepts</h1>
+                <ul>
+                    <li>Object-Oriented Programming</li>
+                    <li>Data Structures & Algorithms</li>
+                    <li>Database Management System</li>
+                    <li>Computer Networks</li>
+                    <li>Operating System</li>
+                </ul>
+            </div>
+            <div class="fourth">
+                <h1>Soft Skills</h1>
+                <ul>
+                    <li>Leadership</li>
+                    <li>Communication</li>
+                    <li>Management</li>
+                    <li>Team Work</li>
+                    <li>Community Memeber</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
     
+    <div class="fourth-container">
+        <div class="heading">Projects</div>
+        <div class="img">
+            <img class="img1" src="{% static 'images/3.jpg' %}">
+            <img class="img2" src="{% static 'images/3.jpg' %}">
+            <img class="img3" src="{% static 'images/3.jpg' %}">
+        </div>
+        <div class="img-heading">
+            <div class="img1-heading">
+                <h3>Social Media</h3>
+                <p>This is the Social Media Site created using Django.</p>
+                <a href="#">link</a>
+            </div>
+            <div class="img2-heading">
+                <h3>Heart Disease Risk Prediction</h3>
+                <p>This is the AI/ML model created using Scikit-Learn.</p>
+                <a href="#">link</a>
+            </div>
+            <div class="img3-heading" >
+                <h3>Student Management System</h3>
+                <p>This is Management System created using Tkinter, PyMySQL.</p>
+                <a href="#">link</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="fifth-container">
+        <div class="fifth-container-first">
+            <div class="fifth-heading">Other Projects and Platform</div>
+            <div class="para">I have created other projects using various technologies of python, those projects could be founded on my github profile listed below, I have even listed my leetcode profile and my cerifications which can be viewed Below!</div>
+        </div>
+        <div class="fifth-container-second">
+            <div class="fifth-container-second1">
+                <ul>
+                    <li>💻Github - <a href="#">Go</a></li>
+                    <li>🔗LinkedIn - <a href="#">Go</a></li>
+                    <li>👨🏻‍💻LeetCode - <a href="#">Go</a></li>
+                </ul>
+            </div>
+            <div class="fifth-container-second2">
+                <img class="fifth-img1" src="{% static 'images/3.jpg' %}">
+                <img class="fifth-img2" src="{% static 'images/3.jpg' %}">
+            </div>
+        </div>
+    </div>
+
+    <div class="sixth-container">
+        <div class="sixth-container-first">
+            <div>
+                <div class="name">Chirag</div>
+                <div class="withme">WORK WITH ME</div>
+                <div class="data">
+                    <div class="data-add">Amritsar, Punjab - India</div>
+                    <div class="data-email">chirag178g@gmail.com</div>
+                </div>        
+            </div>
+            <img src="{% static 'images/3.jpg' %}">
+        </div>
+    </div>
     
 </body>
 </html>
